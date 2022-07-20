@@ -13,4 +13,5 @@ public class Employee {
     private int age;
     private Title title;
     private List<Divishion> divishions;
+    private int salary;
 }

@@ -1,5 +1,7 @@
 package webapp.Com.Cherepovski;
 
+import com.Cherepovski.personal.model.Employee;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -9,7 +11,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet("/employees")
-public class Employer extends HttpServlet {
+public class EmployeerControler extends HttpServlet {
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         req.setAttribute("employees", List.of(new Employee()));
