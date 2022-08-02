@@ -1,13 +1,13 @@
 package com.Cherepovski.personal.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Title  {
+public class Title extends AbstractEntity {
     private String name;
 }

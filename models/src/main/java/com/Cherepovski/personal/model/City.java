@@ -1,14 +1,14 @@
 package com.Cherepovski.personal.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 @Data
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
-public class City {
+public class City extends AbstractEntity {
     private String name;
     private List<Divishion> divishions;
 
